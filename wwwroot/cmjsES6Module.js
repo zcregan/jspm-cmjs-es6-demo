@@ -1,7 +1,14 @@
 var _ = require('lodash');
 
-function addOne (numbers) {
-	return _.map(numbers, number => number + 1);
+function addTwo (numbers) {
+	var addOne = _.map(numbers, function (number) { return number + 1 });
+	var addAnotherOne = [];
+
+	for (number of addOne) {
+		addAnotherOne.push(number + 1);
+	}
+
+	return addAnotherOne;
 }
 
-module.exports = addOne;
+module.exports = addTwo;
